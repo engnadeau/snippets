@@ -1,0 +1,16 @@
+`ZSH_THEME="agnoster"`
+
+# NN: fix username in prompt
+# https://github.com/robbyrussell/oh-my-zsh/wiki/Themes#agnoster
+DEFAULT_USER=$USER
+prompt_context(){}
+
+# https://github.com/djui/alias-tips
+# https://github.com/zsh-users/zsh-autosuggestions
+plugins=(
+git
+common-aliases
+alias-tips
+zsh-autosuggestions
+extract
+)
