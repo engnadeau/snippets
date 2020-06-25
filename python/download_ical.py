@@ -9,19 +9,14 @@ import fire
 import pandas as pd
 from ics import Calendar
 
-CAL_ICS = os.getenv("CAL_ICS_URL")
-NOW = datetime.now().strftime("%Y-%m-%d")
-DEFAULT_OUTPUT_PATH = Path(__file__).parent / f"{NOW}_calendar.csv"
 logger = logging.getLogger(__file__)
 
 
-def main(output: Optional[str] = None, url: Optional[str] = None):
+def main(output: Optional[str] = None, url: Optional[str] = os.getenv("CAL_ICS_URL")):
     # get calendar
-    if not url and not CAL_ICS:
+    if not url:
         logger.error("URL argument or CAL_ICS_URL env variable must be set")
         quit()
-    elif not url:
-        url = CAL_ICS
 
     logger.info("Reading calendar")
     cal = Calendar(urlopen(url).read().decode("iso-8859-1"))
@@ -35,7 +30,9 @@ def main(output: Optional[str] = None, url: Optional[str] = None):
 
     # dump output
     if not output:
-        output = DEFAULT_OUTPUT_PATH.resolve()
+        now = datetime.now().strftime("%Y-%m-%d")
+        output = Path(__file__).parent / f"{now}_calendar.csv".resolve()
+        output = output.resolve()
     else:
         output = Path(output)
     logger.info(f"Saving to {output.resolve()}")
