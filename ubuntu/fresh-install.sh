@@ -44,3 +44,5 @@ sudo snap install --classic slack
 sudo snap install spotify
 sudo snap install vlc
 sudo snap install okular
+
+npm install -g fx
