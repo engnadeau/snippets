@@ -1,6 +1,7 @@
-from pathlib import Path
-import fire
 import logging
+from pathlib import Path
+
+import fire
 
 logging.basicConfig(level=logging.INFO)
 
