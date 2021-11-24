@@ -1,6 +1,8 @@
+.PHONY: profile
 profile:
 	\cp -f ~/.profile $@
 
+.PHONY: zshrc
 zshrc:
 	\cp -f ~/.zshrc $@
 
