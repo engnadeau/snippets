@@ -105,6 +105,9 @@ export PATH=$PATH:$HOME/.local/bin
 # NN: add GOLANG binaries to path
 export PATH=$PATH:$HOME/go/bin
 
+# NN: add user binaries to path
+export PATH=$PATH:$HOME/bin
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
