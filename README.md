@@ -71,4 +71,3 @@ echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 ### Other Apps
 
 - https://github.com/mifi/lossless-cut
-- https://github.com/commitizen/cz-cli
