@@ -1,22 +1,55 @@
-# Nick's Snippets
-
-> Succinct scripts, examples, and settings
+# Nick's Snippets and System Settings
 
 ## Workstation Setup
 
-### Backup
+- [Install WSL2 and Ubuntu](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
+- Set `Campbell` colour scheme
 
-- VM images
-- ssh keys
-- Documents
+### SSH Key & GitHub CLI
 
-### <3 Apps
+Use the GH CLI to generate a new SSH key and add it to your GitHub account.
 
-- [LosslessCut](https://github.com/mifi/lossless-cut)
-- [fstl](https://github.com/mkeeter/fstl)
-- [pandoc](https://github.com/jgm/pandoc/releases/latest)
+- https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+- `gh auth login`
+
+### ZSH
+
+- `sudo apt install zsh`
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-- [code-settings-sync](https://github.com/shanalikhan/code-settings-sync)
-  - https://gist.github.com/nnadeau for settings
-- [nvm](https://github.com/nvm-sh/nvm)
-- [GitHub CLI](https://github.com/cli/cli/)
+
+#### `.zshrc`
+
+Search and set the following:
+
+```zsh
+ZSH_THEME="afowler"
+
+HIST_STAMPS="yyyy-mm-dd"
+
+plugins=(
+git
+common-aliases
+alias-tips
+zsh-autosuggestions
+extract
+)
+
+# User configuration
+
+# vscode as editor
+export EDITOR='code'
+
+# add python modules to path
+export PATH=$PATH:$HOME/.local/bin
+```
+
+#### Plugin Installation
+
+- https://github.com/djui/alias-tips#oh-my-zsh
+- https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
+
+### Other Apps
+
+- https://github.com/mifi/lossless-cut
+- https://github.com/nvm-sh/nvm
+- https://github.com/commitizen/cz-cli
