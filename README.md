@@ -31,11 +31,12 @@ ZSH_THEME="afowler"
 HIST_STAMPS="yyyy-mm-dd"
 
 plugins=(
-git
-common-aliases
 alias-tips
-zsh-autosuggestions
+common-aliases
 extract
+gh
+git
+zsh-autosuggestions
 )
 
 # User configuration
