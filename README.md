@@ -5,6 +5,10 @@
 - [Install WSL2 and Ubuntu](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
 - Set `Campbell` colour scheme
 
+### Install `wslu` for WSL
+
+- See https://wslutiliti.es/wslu/install.html#ubuntu
+
 ### SSH Key & GitHub CLI
 
 Use the GH CLI to generate a new SSH key and add it to your GitHub account.
