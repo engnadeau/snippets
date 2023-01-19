@@ -58,6 +58,9 @@ export EDITOR='code'
 
 # add python modules to path
 export PATH=$PATH:$HOME/.local/bin
+
+# add golang path
+export PATH=$PATH:/usr/local/go/bin
 ```
 
 #### Plugin Installation
@@ -80,6 +83,11 @@ npm install -g commitizen
 npm install -g cz-conventional-changelog
 echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 ```
+
+### Install Go and Hugo
+
+- [Go installation](https://go.dev/doc/install)
+- [Hugo installation](https://gohugo.io/installation/linux/)
 
 ### Other Apps
 
