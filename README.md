@@ -87,7 +87,12 @@ echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 ### Install Go and Hugo
 
 - [Go installation](https://go.dev/doc/install)
-- [Hugo installation](https://gohugo.io/installation/linux/)
+- [Hugo installation](https://gohugo.io/installation/linux/):
+
+```sh
+go install -tags extended github.com/gohugoio/hugo@latest
+hugo version
+```
 
 ### Other Apps
 
