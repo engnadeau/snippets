@@ -5,6 +5,14 @@
 - [Install WSL2 and Ubuntu](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
 - Set `Campbell` colour scheme
 
+## Install the Basics
+
+```sh
+sudo apt install -y \
+  make \
+  build-essential
+```
+
 ### Install `wslu` for WSL
 
 - See https://wslutiliti.es/wslu/install.html#ubuntu
