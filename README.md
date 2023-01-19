@@ -60,6 +60,7 @@ export EDITOR='code'
 export PATH=$PATH:$HOME/.local/bin
 
 # add golang path
+export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:/usr/local/go/bin
 ```
 
